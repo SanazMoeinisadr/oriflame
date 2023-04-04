@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: sans;
+    src: url("../../font/OriflameSans20-Regular.eot");
+    src: url("../../font/OriflameSans20-Regular.ttf");
+    src: url("../../font/OriflameSans20-Regular.woff");
+    src: url("../../font/OriflameSans20-Regular.woff2");
+}
+body{
+    font-family: sans;
+    padding-top: 80px !important;
+    overflow-x: hidden !important;
+}
+div.warpper{
+    width: 100%;
+}
+.active{
+    display: flex !important;
+}

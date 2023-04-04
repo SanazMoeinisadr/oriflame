@@ -1,0 +1,53 @@
+div.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 40px;
+  color: #333;
+  margin-bottom: 20px;
+  > div.fot1 {
+    padding: 0 15px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+    line-height: 17px;
+    font-size: 12px;
+    > p {
+      padding: 0 15px;
+      margin-bottom: 30px;
+      width: 100%;
+      max-width: 580px;
+      text-align: center;
+      line-height: 17px;
+      font-size: 12px;
+    }
+  }
+  > div.fot2 {
+    padding: 0 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 580px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 17px;
+    > p {
+      font-size: 12px;
+      text-align: center;
+      line-height: 17px;
+    }
+  }
+  div.fot3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 10px;
+    > u {
+      color: #333333;
+      padding: 0 25px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

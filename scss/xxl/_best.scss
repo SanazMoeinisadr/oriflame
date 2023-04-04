@@ -1,0 +1,230 @@
+div.best {
+  max-width: 1346px;
+  position: relative;
+  padding: 0 30px;
+  margin: 60px auto 70px auto;
+  display: grid;
+  grid-template-areas:
+    "offer h1 h1 left"
+    "right right right left";
+  gap: 30px 15px;
+  grid-template-columns: 9fr 11fr;
+  justify-content: center;
+
+> h1 {
+       grid-area: h1;
+       align-self: center;
+       font-size: 40px;
+       line-height: 1.2;
+       height: unset;
+       box-sizing: border-box;
+       justify-self: start;
+       margin-left: 80px;
+     }
+     > div.offer {
+       justify-self: start;
+       align-self: center;
+       width: 137px;
+       height: 45px;
+       border: 1px solid #333;
+       border-radius: 25px;
+       cursor: pointer;
+       > p {
+         color: #333;
+         font-size: 14px;
+         font-weight: bold;
+         text-align: center;
+         line-height: 40px;
+       }
+     }
+     div.right {
+       grid-area: right;
+       height: 390px;
+       display: grid;
+       gap: 15px;
+       grid-template-columns: repeat(4, 1fr);
+       box-sizing: border-box;
+       cursor: pointer;
+       >div{
+              position: relative;
+              transition: 500ms;
+              overflow: hidden;
+              &:hover {
+                     div.img{
+                            >img{
+                                   transform: scale(1.1);
+                            }
+                     }
+              }
+       }
+       >div > div.img{
+              width: 249px;
+              height: 249px;
+              transition: 500ms;
+              overflow: hidden;
+              >img{
+                     transition: 500ms;
+                     width: 100%;
+                     height: 100%;
+              }
+       }
+       div > div.matn{
+         margin-top: -15px;
+       }
+       div > div.matn > p{
+         font-size: 10px;
+         height: 15px;
+         letter-spacing: 2px;
+         margin-top: 25px;
+         margin-bottom: 12px;
+         width: 100%;
+         display: flex;
+         cursor: pointer;
+         align-items: center;
+       }
+       div > div.matn > h4  {
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -moz-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              font-size: 14px;
+              height: 38px;
+              margin-bottom: 10px;
+              line-height: 19px;
+              width: 100%;
+              font-weight: normal;
+              color: #333;
+       }
+       div > div.matn2{
+         display: flex;
+       }
+       div > div.matn2 > p{
+         text-transform: uppercase;
+         color: rgb(57, 57, 57);
+         font-size: 14px;
+         font-weight: bold;
+         height: 15px;
+         letter-spacing: 2px;
+         margin: 10px 0px;
+         width: 30%;
+         display: flex;
+         cursor: pointer;
+         align-items: center;
+         font-family: sans-regular;
+       }
+       div > div.matn2 > del{
+         display: inline-block;
+         text-transform: uppercase;
+         color: #8b8b8b;
+         font-size: 14px;
+         font-weight: bold;
+         height: 15px;
+         letter-spacing: 2px;
+         margin: 10px 0px;
+         width: 100%;
+         display: flex;
+         cursor: pointer;
+         align-items: center;
+         font-family: sans-regular;
+       }
+     }
+     div.right > div > div.icon{
+       position: absolute;
+       top: 190px;
+       right: 10px;
+       width: 42px;
+       height: 37px;
+       border-radius: 50%;
+       background-color: white;
+       box-shadow: 2px 2px 2px rgb(136, 136, 136);
+       > i {
+         font-size: 20px;
+         position: relative;
+         top: 7px;
+         right: -12px;
+         &:hover {
+           color: #333;
+         }
+       }
+     }
+     > div.left {
+       width: 100%;
+       border-radius: 0px 5px 5px 0px;
+       grid-area: left;
+       overflow: hidden;
+       position: relative;
+       > img {
+         width: 300px;
+         height: 459px;
+         object-fit: cover;
+       }
+      
+     }
+     >div.right>div.rimel>div.rang,div.right>div.khat>div.rang{
+       display: flex;
+       flex-flow: row wrap;
+       align-items: center;
+       margin-top: 5px;
+       cursor: pointer;
+       overflow: hidden;
+       
+          >div.firstF{
+              background-color: #b78e77;
+              height: 14px;
+              width: 14px;
+              border-radius: 50%;
+              margin: 0 4px 10px 4px;
+          }
+          >div.secondS{
+              background-color: #6a594e;
+              height: 14px;
+              width: 14px;
+              border-radius: 50%;
+              margin: 0 4px 10px 4px;
+          }
+          >div.thirdT{
+              background-color:#54262d;
+              height: 14px;
+              width: 14px;
+              border-radius: 50%;
+              margin: 0 4px 10px 4px;
+          }
+          >div.fourth{
+              background-color: #353b39;
+              height: 14px;
+              width: 14px;
+              border-radius: 50%;
+              margin: 0 4px 10px 4px;
+          }
+              >div.five{
+              background-color: #494949;
+              height: 14px;
+              width: 14px;
+              border-radius: 50%;
+              margin: 0 4px 10px 4px;
+              }
+              >div.sixth{
+              background-color:#5c5b59;
+              height: 14px;
+              width: 14px;
+              border-radius: 50%;
+              margin: 0 4px 10px 4px;
+              }
+              >div.seventh{
+              background-color: #18355d;
+              height: 14px;
+              width: 14px;
+              border-radius: 50%;
+              margin: 0 4px 10px 4px;
+              }
+              >div.eighth{
+              background-color:#764d37;
+              height: 14px;
+              width: 14px;
+              border-radius: 50%;
+              margin: 0 4px 10px 4px;
+              }
+
+     }
+}

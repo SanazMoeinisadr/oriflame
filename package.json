@@ -1,0 +1,23 @@
+{
+  "name": "session1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss/main.scss -o css/ -r",
+    "scssMinify": "node-sass -w scss/main.scss -o css/ --output-style compressed",
+    "setting": "node-sass -w scss/setting/setting.scss -o css/setting/ -r --output-style compressed",
+    "xxl": "node-sass -w scss/xxl/xxl.scss -o css/xxl/ -r --output-style compressed ",
+    "xl": "node-sass -w scss/xl/xl.scss -o css/xl/ -r --output-style compressed ",
+    "lg": "node-sass -w scss/lg/lg.scss -o css/lg/ -r --output-style compressed ",
+    "md": "node-sass -w scss/md/md.scss -o css/md/ -r --output-style compressed ",
+    "sm": "node-sass -w scss/sm/sm.scss -o css/sm/ -r --output-style compressed ",
+    "xs": "node-sass -w scss/xs/xs.scss -o css/xs/ -r --output-style compressed "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

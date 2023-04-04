@@ -1,0 +1,54 @@
+div.brands{
+    width: 100%;
+    height: 462px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    >h1{
+        height: 50px;
+        margin: 5px 160px;
+        line-height: 1.235;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #333;
+        font-size: 40px;
+    }
+    >div.top{
+        margin-top: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        >img{
+            margin-right: 47px;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    }
+    >div.bottom{
+        margin-top: 30px;
+        display: inline-block;
+        margin-left: 412px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 40px;
+        background-color: rgb(250, 250, 250);
+        border: 1px solid rgb(116, 116, 116);
+        &:hover{
+        background-color: rgb(238, 238, 238);
+        }
+        >P{
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-left: 32px;
+            margin-top: 8px;
+            line-height: 30px;
+            font-size: 14px;
+            
+        }
+}
+}

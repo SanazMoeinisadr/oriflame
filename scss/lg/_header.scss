@@ -1,0 +1,146 @@
+div.header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1px;
+  background-color: #ffffff;
+  > div {
+    flex: 1 0 0;
+    height: inherit;
+  }
+  > div:nth-of-type(1) {
+    > span {
+      flex: 1 0 0;
+      text-align: center;
+      justify-content: flex-start;
+    }
+    > span:nth-of-type(1) {
+      > img {
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+    }
+    > span:nth-of-type(2) {
+      > img {
+        width: 28px;
+        height: 28px;
+        display: none;
+        margin-right: 45px;
+      }
+    }
+    > span:nth-of-type(3) {
+      > a {
+        display: none;
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #000000;
+        transition: 300ms;
+        &:hover {
+          color: #777777;
+        }
+      }
+    }
+    > span:nth-of-type(4) {
+      > a {
+        display: none;
+        line-height: 30px;
+        margin-left: 40px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #000000;
+        transition: 300ms;
+        &:hover {
+          color: #777777;
+        }
+      }
+    }
+  }
+  > div:nth-of-type(2) {
+    left: -50px;
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      > img {
+        left: 0px;
+        position: absolute;
+        justify-content: center;
+        width: 139px;
+        height: 31px;
+    }
+  }
+  > div:nth-of-type(3) {
+    display: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    > div.search {
+      justify-content: flex-start;
+      position: relative;
+      top: -58px;
+      right: -100px;
+      margin-right: 1290px;
+      width: 205px;
+      height: 38px;
+      > input {
+        display: none;
+        all: 10px;
+        width: 10px;
+        height: inherit;
+        border-radius: 18px;
+        background-color: rgb(197, 63, 63);
+        box-sizing: border-box;
+        margin-left: -568px;
+        border: unset;
+        outline: unset;
+        &::placeholder {
+          color: #333333;
+          font-size: 12px;
+          text-align: justify;
+          padding-top: 400px;
+        }
+      }
+      > label {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: -10px;
+        left: 14px;
+        cursor: pointer;
+        > img {
+          width: inherit;
+          height: inherit;
+        }
+      }
+    }
+    > span {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      justify-content: end;
+      top: 20px;
+      right: 10px;
+      > i {
+        position: absolute;
+        bottom: 10px;
+        left: 6px;
+        color: black;
+        font-size: 28px;
+      }
+    }
+  }
+}

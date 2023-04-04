@@ -1,0 +1,250 @@
+div.astaxanthin {
+  max-width: 1346px;
+  position: relative;
+  margin: 0 20px 60px auto;
+  display: grid;
+  grid-template-areas:
+    "h1 h1 h1"
+    "p p started"
+    "left right right";
+  gap: 20px 15px;
+  grid-template-columns: 9fr 11fr;
+  justify-content: center;
+  > h1 {
+    grid-area: h1;
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+    height: unset;
+    box-sizing: border-box;
+  }
+  > p {
+    grid-area: p;
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 0 0 10px 130px;
+    justify-self: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  > div.started {
+    position: relative;
+    top: 14px;
+    right: 8px;
+    width: 137px;
+    height: 45px;
+    border: 1px solid #333;
+    border-radius: 25px;
+    cursor: pointer;
+    > p {
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+  div.right {
+    grid-area: right;
+    height: 387px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    cursor: pointer;
+    div.abi > img,
+    div.banafsh > img,
+    div.khali > img {
+      width: 257px;
+      height: 257px;
+      transition: 500ms;
+    }
+    div.abi,
+    div.banafsh,
+    div.khali {
+      position: relative;
+      transition: 500ms;
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    div.abi > div.matn {
+      margin-top: 27px;
+    }
+    div.banafsh > div.matn,
+    div.khali > div.matn {
+      margin-top: -30px;
+    }
+    div.abi > div.matn > p,
+    div.banafsh > div.matn > p,
+    div.khali > div.matn > p {
+      font-size: 10px;
+      height: 15px;
+      letter-spacing: 2px;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+    }
+    div.abi > div.matn > h5,
+    div.banafsh > div.matn > h5,
+    div.khali > div.matn > h5 {
+      text-transform: uppercase;
+      color: #2f2f2f;
+      font-size: 10px;
+      height: 15px;
+      letter-spacing: 2px;
+      margin: 10px 0px;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+    }
+    div.abi > div.matn2,
+    div.banafsh > div.matn2,
+    div.khali > div.matn2 {
+      display: flex;
+    }
+    div.abi > div.matn2 > h4,
+    div.banafsh > div.matn2 > h4,
+    div.khali > div.matn2 > h4 {
+      text-transform: uppercase;
+      color: #646464;
+      font-size: 14px;
+      font-weight: bold;
+      height: 15px;
+      letter-spacing: 2px;
+      margin: 10px 0px;
+      width: 30%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      font-family: sans-regular;
+    }
+    div.abi > div.matn2 > del,
+    div.banafsh > div.matn2 > del,
+    div.khali > div.matn2 > del {
+      display: inline-block;
+      text-transform: uppercase;
+      color: #8b8b8b;
+      font-size: 14px;
+      font-weight: bold;
+      height: 15px;
+      letter-spacing: 2px;
+      margin: 10px 0px;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      font-family: sans-regular;
+    }
+  }
+  div.right > div.abi > div.icon {
+    position: absolute;
+    bottom:150px;
+    right: 10px;
+    width: 42px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 1px lightgrey;
+    > i {
+      font-size: 20px;
+      position: relative;
+      top: 7px;
+      right: -12px;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  
+  div.right > div.banafsh > div.icon {
+    position: absolute;
+    bottom:150px;
+    right: 10px;
+    width: 42px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 1px lightgrey;
+    > i {
+      font-size: 20px;
+      position: relative;
+      top: 7px;
+      right: -12px;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  div.right > div.khali > div.icon{
+    position: absolute;
+    bottom:150px;
+    right: 10px;
+    width: 42px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 1px lightgrey;
+    > i {
+      font-size: 20px;
+      position: relative;
+      top: 7px;
+      right: -12px;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  > div.left {
+    width: 100%;
+    border-radius: 0px 5px 5px 0px;
+    grid-area: left;
+    overflow: hidden;
+    position: relative;
+    > img {
+      height: 367px;
+      object-fit: cover;
+    }
+    &::after {
+      content: "Antioxidant powerhouse";
+      position: absolute;
+      bottom: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      font-weight: 700;
+      font-family: sans-serif;
+      text-transform: uppercase;
+    }
+  }
+  div.right > div.banafsh > span,
+  div.right > div.khali > span {
+    width: 45px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: -250px;
+    right: -20px;
+    border-radius: 50%;
+    height: 45px;
+    background-color: blueviolet;
+    display: flex;
+    > img {
+      width: 29px;
+      height: 29px;
+    }
+  }
+}

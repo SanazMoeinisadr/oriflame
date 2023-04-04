@@ -1,0 +1,222 @@
+div.astaxanthin {
+  max-width: 1346px;
+  position: relative;
+  margin: 0 auto 60px auto;
+  padding: 0 15px;
+  display: grid;
+  gap: 15px;
+  grid-template-areas:
+    "h1"
+    "p"
+    "left"
+    "right"
+    "started";
+  grid-template-columns: 1fr;
+  justify-content: center;
+  > h1 {
+    grid-area: h1;
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  > p {
+    grid-area: p;
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+    justify-self: center;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  > div.started {
+    width: 137px;
+    grid-area: started;
+    margin-top: 5px;
+    justify-self: center;
+    border: 1px solid #333;
+    border-radius: 25px;
+    cursor: pointer;
+    > p {
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+  div.right {
+    grid-area: right;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr) !important;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    div.abi > img,
+    div.banafsh > img {
+      width: 266px;
+      height: 266px;
+      transition: 500ms;
+    }
+    div.khali {
+      display: none;
+    }
+    div.abi,
+    div.banafsh {
+      position: relative;
+      transition: 500ms;
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    div.abi > div.matn {
+      margin-top: 4px;
+    }
+    div.banafsh > div.matn {
+      margin-top: -44px;
+    }
+    div.abi > div.matn > p{
+      font-size: 10px;
+      height: 15px;
+      letter-spacing: 2px;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+    }
+    div.banafsh > div.matn > p {
+      font-size: 10px;
+      height: 15px;
+      letter-spacing: 2px;
+      margin-top: 17px;
+      margin-bottom: 20px;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+    }
+    div.abi > div.matn > h5,
+    div.banafsh > div.matn > h5{
+      text-transform: uppercase;
+      color: #2f2f2f;
+      font-size: 10px;
+      height: 15px;
+      letter-spacing: 2px;
+      margin: 10px 0px;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+    }
+    div.abi > div.matn2,
+    div.banafsh > div.matn2 {
+      display: flex;
+    }
+    div.abi > div.matn2 > h4,
+    div.banafsh > div.matn2 > h4 {
+      text-transform: uppercase;
+      color: #646464;
+      font-size: 14px;
+      font-weight: bold;
+      height: 15px;
+      letter-spacing: 2px;
+      margin: 10px 0px;
+      width: 30%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      font-family: sans-regular;
+    }
+    div.abi > div.matn2 > del,
+    div.banafsh > div.matn2 > del {
+      display: inline-block;
+      text-transform: uppercase;
+      color: #8b8b8b;
+      font-size: 14px;
+      font-weight: bold;
+      height: 15px;
+      letter-spacing: 2px;
+      margin: 10px 0px;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      font-family: sans-regular;
+    }
+  }
+ 
+  div.right >div> div.icon{
+    position: absolute;
+    z-index: 5;
+    bottom: 150px;
+    right: 10px;
+    width: 42px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 1px lightgrey;
+    > i {
+      font-size: 20px;
+      position: relative;
+      top: 7px;
+      right: -12px;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  > div.left {
+    border-radius: 0px 5px 5px 0px;
+    grid-area: left;
+    overflow: hidden;
+    position: relative;
+    > img {
+      height: 547px;
+      height: 353px;
+      object-fit: cover;
+    }
+    &::after {
+      content: "Antioxidant powerhouse";
+      position: absolute;
+      bottom: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      font-weight: 700;
+      font-family: sans-serif;
+      text-transform: uppercase;
+    }
+  }
+  div.right > div.banafsh > span{
+    width: 45px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: -250px;
+    right: -20px;
+    border-radius: 50%;
+    height: 45px;
+    background-color: blueviolet;
+    display: flex;
+    > img {
+      width: 29px;
+      height: 29px;
+    }
+  }
+}
