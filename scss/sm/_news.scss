@@ -60,7 +60,7 @@ div.news {
       }
     }
     > div > div.img {
-      width: 266px;
+      width: 100%;
       height: 266px;
       transition: 500ms;
       overflow: hidden;
@@ -155,6 +155,7 @@ div.news {
 grid-area: left;
 overflow: hidden;
 position: relative;
+text-align: center;
     > img {
       height: 353px;
 object-fit: cover;

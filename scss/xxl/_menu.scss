@@ -1,128 +1,129 @@
 div.header > div.menu2 {
-  display: none ;
-  width: 100%;
-  height: 80vh;
-  min-height: 590px;
-  max-height: 596px;
-  position: absolute;
-  top: 80px;
-  left: 0;
-  z-index: 4;
-  left: 0;
-  background-color: #ffffff;
-  > ul {
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    min-height: 590px;
-    height: 100%;
-    width: 247px;
-    border-right: 2px solid #f5f5f5;
-    padding: 10px 0;
-    > li {
-       width: 100%;
-       min-height: 35px;
-       margin-bottom: 2px;
-       cursor: pointer;
-       padding-left: 2px;
-       &:hover{
-              background-color: rgba(221, 228, 240, 0.856);
-              >div.koli{
-                     display: flex;
+         display: none;
+         width: 100%;
+         height: 80vh;
+         min-height: 590px;
+         max-height: 596px;
+         position: absolute;
+         top: 80px;
+         left: 0;
+         z-index: 4;
+         left: 0;
+         background-color: #ffffff;
+         > ul {
+           list-style: none;
+           display: flex;
+           flex-flow: column nowrap;
+           min-height: 590px;
+           height: 100%;
+           width: 247px;
+           border-right: 2px solid #f5f5f5;
+           padding: 10px 0;
+           > li {
+              width: 100%;
+              min-height: 35px;
+              margin-bottom: 2px;
+              cursor: pointer;
+              padding-left: 2px;
+              &:hover{
+                     background-color: rgba(221, 228, 240, 0.856);
+                     >div.koli{
+                            display: flex;
+                     }
               }
-       }
-              > div.koli {
-              display: none;
-              flex-flow: row nowrap;
-              padding: 20px 20px 20px 45px;
-              width: 80%;
-              height: 590px;
-              position: absolute;
-              top: 0;
-              left: 247px;
-              gap: 30px;
-              >div.y{
-                     display: flex;
-                     flex-flow: column nowrap;
-                     width: 190px;
+                     > div.koli {
+                     display: none;
+                     flex-flow: row nowrap;
+                     padding: 20px 20px 20px 45px;
+                     width: 80%;
+                     height: 590px;
+                     position: absolute;
+                     top: 0;
+                     left: 247px;
                      gap: 30px;
-                     >div{
-                            color: #333;
-                            >h2{
-                                   font-size: 14px;
+                     >div.y{
+                            display: flex;
+                            flex-flow: column nowrap;
+                            width: 190px;
+                            gap: 30px;
+                            >div{
+                                   color: #333;
+                                   >h2{
+                                          font-size: 14px;
+                                          font-weight: 700;
+                                          margin: 10px;
+                                          text-transform: capitalize;
+                                          &:hover{
+                                                 color: #999999;
+                                          }
+                                   }
+                                   >p{
+                                          margin: 10px;
+                                          font-size: 14px;
+                                          &:hover{
+                                                 color: #999999;
+                                                 font-weight: 700;
+                                          }
+                                   }
+                            }
+                     }
+             }
+             >div.axdar{
+                     justify-content: center;
+                     align-items: center;
+                     >div.ax3{
+                            display: flex;
+                            flex-flow: column nowrap;
+                            align-items: center;
+                            >a:first-of-type{
+                                   display: block;
+                                   text-decoration: none;
+                                   color: #000;
+                                   font-size: 17px;
                                    font-weight: 700;
-                                   margin: 10px;
-                                   text-transform: capitalize;
                                    &:hover{
                                           color: #999999;
                                    }
                             }
                             >p{
-                                   margin: 10px;
+                                   color: #666666;
+                                   text-align: center;
                                    font-size: 14px;
-                                   &:hover{
-                                          color: #999999;
-                                          font-weight: 700;
-                                   }
+                                   margin: 10px 0 15px 0;
                             }
-                     }
-              }
-      }
-      >div.axdar{
-              justify-content: center;
-              align-items: center;
-              >div.ax3{
-                     display: flex;
-                     flex-flow: column nowrap;
-                     align-items: center;
-                     >a:first-of-type{
-                            display: block;
-                            text-decoration: none;
-                            color: #000;
-                            font-size: 17px;
-                            font-weight: 700;
-                            &:hover{
-                                   color: #999999;
-                            }
-                     }
-                     >p{
-                            color: #666666;
-                            text-align: center;
-                            font-size: 14px;
-                            margin: 10px 0 15px 0;
-                     }
-                     >img{
-                            width: inherit;
+                            >img{
+                                   width: inherit;
                             height: 440px;
-                            border-radius: 10px;
+                                   border-radius: 10px;
+                            }
+                            >img#insp{
+                                   width: 269px;
+                                   height: 269px;
+                                   object-fit: cover;
+                                   border-radius: unset;
+                            }
+                            >a:nth-of-type(2){
+                                   text-decoration: underline 2px;
+                                   color: #333;
+                                   font-size: 14px;
+                                   font-weight: 700;
+                                   text-underline-offset: 5px;
+                            }
                      }
-                     >img#insp{
-                            width: 269px;
-                            height: 269px;
-                            object-fit: cover;
-                            border-radius: unset;
-                     }
-                     >a:nth-of-type(2){
-                            text-decoration: underline 2px;
-                            color: #333;
-                            font-size: 14px;
-                            font-weight: 700;
-                            text-underline-offset: 5px;
-                     }
-              }
-      }
-      > a {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        padding-left: 25px;
-        color: #333;
-        font-size: 17px;
-        font-weight: 600;
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-}
+             }
+             > a {
+               display: flex;
+               flex-flow: row wrap;
+               align-items: center;
+               padding-left: 25px;
+               color: #333;
+               font-size: 17px;
+               font-weight: 600;
+               text-decoration: none;
+               width: 100%;
+               height: 100%;
+             }
+           }
+         }
+       }
+       

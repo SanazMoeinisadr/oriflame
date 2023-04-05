@@ -10,6 +10,9 @@
     src: url("../../font/OriflameSans20-Regular.woff");
     src: url("../../font/OriflameSans20-Regular.woff2");
 }
+html{
+    overflow-x: hidden !important;
+}
 body{
     font-family: sans;
     padding-top: 80px !important;

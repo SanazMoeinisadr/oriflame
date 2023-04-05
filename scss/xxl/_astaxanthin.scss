@@ -65,6 +65,7 @@ div.astaxanthin {
     div.abi,
     div.banafsh,
     div.khali {
+      position: relative;
       transition: 500ms;
       overflow: hidden;
       &:hover {
@@ -74,11 +75,11 @@ div.astaxanthin {
       }
     }
     div.abi > div.matn {
-      margin-top: -55px;
+      margin-top: 27px;
     }
     div.banafsh > div.matn,
     div.khali > div.matn {
-      margin-top: -65px;
+      margin-top: -30px;
     }
     div.abi > div.matn > p,
     div.banafsh > div.matn > p,
@@ -148,8 +149,8 @@ div.astaxanthin {
   }
   div.right > div.abi > div.icon {
     position: absolute;
-    top: -102px;
-    left: 205px;
+    bottom:150px;
+    right: 10px;
     width: 42px;
     height: 37px;
     border-radius: 50%;
@@ -165,11 +166,30 @@ div.astaxanthin {
       }
     }
   }
-  div.right > div.banafsh > div.icon,
-  div.right > div.khali > div.icon {
+  
+  div.right > div.banafsh > div.icon {
     position: absolute;
-    top: -110px;
-    left: 205px;
+    bottom:150px;
+    right: 10px;
+    width: 42px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 1px lightgrey;
+    > i {
+      font-size: 20px;
+      position: relative;
+      top: 7px;
+      right: -12px;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+  div.right > div.khali > div.icon{
+    position: absolute;
+    bottom:150px;
+    right: 10px;
     width: 42px;
     height: 37px;
     border-radius: 50%;

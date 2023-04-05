@@ -1,26 +1,40 @@
 div.stock {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   width: 100%;
   max-width: 1396px;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 50px auto 100px auto;
-  > div.left {
+  margin: 0 auto 100px auto;
+  background-color: lightgray;
+  >div.left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     position: relative;
+    &::after{
+       content: "Beauty must-haves for spring";
+       position: absolute;
+       bottom: 45px;
+       left: 50%;
+       transform: translateX(-50%);
+       width: 100%;
+       text-align: center;
+       color: white;
+       font-size: 28px;
+       font-weight: 700;
+       font-family:sans-serif;
+       text-transform: uppercase;
+   }
     > img {
-      width: 683px;
+      width: 678px;
       height: 430px;
     }
   }
   >div.right {
-    
     align-self: stretch;
     padding: 0 80px;
     color: #333;
@@ -37,7 +51,7 @@ div.stock {
       color: #333;
       text-align: left;
     }
-    div.see {
+    >div.see {
       width: 153px;
       height: 45px;
       box-sizing: border-box;
