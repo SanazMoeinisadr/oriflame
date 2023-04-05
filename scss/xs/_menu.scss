@@ -1,5 +1,5 @@
 div.header > div.menu2 {
-//   display: none ;
+  display: none ;
   width: 100%;
   height: 80vh;
   min-height: 590px;
@@ -28,6 +28,7 @@ div.header > div.menu2 {
        &:hover{
               background-color: rgba(221, 228, 240, 0.856);
               >div.koli{
+                     display: none;
                      display: flex;
               }
        }
@@ -40,16 +41,18 @@ div.header > div.menu2 {
               position: absolute;
               top: 0;
               left: 247px;
-              gap: 30px;
+              gap: 5px;
+              display: none;
               >div.y{
                      display: flex;
                      flex-flow: column nowrap;
-                     width: 190px;
-                     gap: 30px;
+                     width: 150px;
+                     gap: 8px;
                      >div{
                             color: #333;
                             >h2{
-                                   font-size: 14px;
+                                   display: none;
+                                   font-size: 12px;
                                    font-weight: 700;
                                    margin: 10px;
                                    text-transform: capitalize;
@@ -58,25 +61,36 @@ div.header > div.menu2 {
                                    }
                             }
                             >p{
-                                   margin: 10px;
-                                   font-size: 14px;
+                                   display: none;
+                                   margin: 12px;
+                                   font-size: 12px;
                                    &:hover{
                                           color: #999999;
                                           font-weight: 700;
                                    }
                             }
                      }
+                     >.kids{
+                            display: none;
+                     }
               }
+            
       }
       >div.axdar{
+       display: none;
               justify-content: center;
               align-items: center;
+              margin-left: -50px;
               >div.ax3{
+                     display: none;
+                     width: 200px;
+                     height: 200px;
                      display: flex;
                      flex-flow: column nowrap;
                      align-items: center;
+                     justify-content: center;
                      >a:first-of-type{
-                            display: block;
+                            display: none;
                             text-decoration: none;
                             color: #000;
                             font-size: 17px;
@@ -86,29 +100,35 @@ div.header > div.menu2 {
                             }
                      }
                      >p{
+                            display: none;
                             color: #666666;
                             text-align: center;
                             font-size: 14px;
                             margin: 10px 0 15px 0;
                      }
                      >img{
+                            display: none;
                             width: inherit;
-                     height: 440px;
+                            height: 440px;
                             border-radius: 10px;
+                            
                      }
                      >img#insp{
-                            width: 269px;
-                            height: 269px;
+                            display: none;
+                            width: 169px;
+                            height: 169px;
                             object-fit: cover;
                             border-radius: unset;
                      }
                      >a:nth-of-type(2){
+                            display: none;
                             text-decoration: underline 2px;
                             color: #333;
                             font-size: 14px;
                             font-weight: 700;
                             text-underline-offset: 5px;
                      }
+          
               }
       }
       > a {
@@ -117,7 +137,7 @@ div.header > div.menu2 {
         align-items: center;
         padding-left: 25px;
         color: #333;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 600;
         text-decoration: none;
         width: 100%;

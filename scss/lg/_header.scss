@@ -1,11 +1,14 @@
 div.header {
-  position: relative;
   width: 100%;
-  height: 80px;
-  display: flex;
-  flex-flow: row wrap;
-  column-gap: 1px;
-  background-color: #ffffff;
+    height: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 1px;
+    z-index: 9;
+    background-color:#ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
   > div {
     flex: 1 0 0;
     height: inherit;
